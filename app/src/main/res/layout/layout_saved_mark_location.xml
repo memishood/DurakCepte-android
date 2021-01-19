@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CardView.Light.Location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="15dp"
+    android:foreground="?selectableItemBackgroundBorderless"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="4dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/savedMarkLocationImage"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="3dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/savedMarkLocationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_ui_bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/savedMarkLocationDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/segoe_ui"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/savedMarkLocationAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/light"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

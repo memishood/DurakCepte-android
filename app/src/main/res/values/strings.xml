@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Durak Cepte</string>
+    <string name="from">f r o m</string>
+    <string name="memish">M E M I S H</string>
+    <string name="activity_base_back_press">Çıkmak için tekrar GERI\'yi basın</string>
+    <string name="fragment_permissions_label">Uygulama Ayarları</string>
+    <string name="fragment_saved_mark_locations_label">Kaydedilen Duraklarım</string>
+    <string name="fragment_saved_mark_locations_empty_message">Henüz kayıtlı bir durağın yok, hemen bir tane oluştur</string>
+    <string name="location_permission_title">Bu bölümü kullanabilmek için konum ve dosya okuma izni gerekiyor, lütfen konum iznini verin</string>
+    <string name="location_permission_button">İzinleri aktifleştir</string>
+    <string name="location_feature_button">Konum özelliğini aktifleştir</string>
+    <string name="fragment_save_mark_location_label">Durak Ekle</string>
+    <string name="fragment_save_mark_location_title">Durak Başlığı</string>
+    <string name="fragment_save_mark_location_description">Detaylar</string>
+    <string name="fragment_save_mark_location_location">Adres:</string>
+    <string name="fragment_save_mark_location_description_error">Lütfen bir detay belirtin</string>
+    <string name="fragment_save_mark_location_title_error">Lütfen bir başlık belirtin</string>
+    <string name="fragment_save_mark_location_location_error">Konum bilginize ulaşılamadığı için kaydedilmedi.</string>
+    <string name="fragment_saved_mark_location_details_label">Durak Ayrıntıları</string>
+    <string name="fragment_saved_mark_location_details_direction">Yol Tarifi</string>
+    <string name="fragment_saved_mark_location_details_delete">Kaldır</string>
+    <string name="fragment_save_mark_location_details_deleted">başarıyla silindi</string>
+    <string name="fragment_saved_mark_location_details_share">Gönder</string>
+</resources>

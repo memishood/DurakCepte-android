@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SavedMarkLocationDetailsFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/savedMarkLocationDetailsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/segoe_ui_bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/savedMarkLocationDetailsDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/magic" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/savedMarkLocationDetailsAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/magic" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/savedMarkLocationDetailsImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            app:riv_corner_radius="4dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/savedMarkLocationCreatedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/magic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#d1d1d1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <FrameLayout
+                android:id="@+id/savedMarkLocationDetailsDirectionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:foreground="?selectableItemBackgroundBorderless">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_baseline_directions_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/magic"
+                    android:text="@string/fragment_saved_mark_location_details_direction" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/savedMarkLocationDetailsDeleteButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:foreground="?selectableItemBackgroundBorderless">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_baseline_delete_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/magic"
+                    android:text="@string/fragment_saved_mark_location_details_delete" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/savedMarkLocationDetailsShareButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:foreground="?selectableItemBackgroundBorderless">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_baseline_share_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/magic"
+                    android:text="@string/fragment_saved_mark_location_details_share" />
+
+            </FrameLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

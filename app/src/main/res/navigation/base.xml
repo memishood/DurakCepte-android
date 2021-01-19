@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base"
+    app:startDestination="@id/savedMarkLocationsFragment">
+    <fragment
+        android:id="@+id/savedMarkLocationsFragment"
+        android:name="net.memish.durakcepte.view.SavedMarkLocationsFragment"
+        android:label="@string/fragment_saved_mark_locations_label"
+        tools:layout="@layout/fragment_saved_mark_locations">
+        <action
+            android:id="@+id/action_savedMarkLocationsFragment_to_saveMarkLocationFragment"
+            app:destination="@id/saveMarkLocationFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_savedMarkLocationsFragment_to_savedMarkLocationDetailsFragment"
+            app:destination="@id/savedMarkLocationDetailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveMarkLocationFragment"
+        android:name="net.memish.durakcepte.view.SaveMarkLocationFragment"
+        android:label="@string/fragment_save_mark_location_label"
+        tools:layout="@layout/fragment_save_mark_location">
+        <action
+            android:id="@+id/action_saveMarkLocationFragment_to_permissionsFragment"
+            app:destination="@id/permissionsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="net.memish.durakcepte.view.PermissionsFragment"
+        android:label="@string/fragment_permissions_label" />
+    <fragment
+        android:id="@+id/savedMarkLocationDetailsFragment"
+        android:name="net.memish.durakcepte.view.SavedMarkLocationDetailsFragment"
+        android:label="@string/fragment_saved_mark_location_details_label"
+        tools:layout="@layout/fragment_saved_mark_location_details" />
+</navigation>

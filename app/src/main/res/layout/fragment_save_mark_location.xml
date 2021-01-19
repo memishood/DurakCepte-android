@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SaveMarkLocationFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/saveMarkLocationAddImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="15dp"
+                android:src="@drawable/image"
+                app:riv_corner_radius="5dp"
+                app:riv_mutate_background="true"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/saveMarkLocationTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:hint="@string/fragment_save_mark_location_title"
+                    android:fontFamily="@font/medium"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/saveMarkLocationDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:hint="@string/fragment_save_mark_location_description"
+                    android:fontFamily="@font/medium"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CardView.Light.Location"
+                android:layout_margin="15dp"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/fragment_save_mark_location_location"
+                            android:fontFamily="@font/medium"/>
+
+                        <ProgressBar
+                            android:id="@+id/saveMarkLocationProgressBar"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:indeterminateTint="@color/purple_500"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/saveMarkLocationAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/medium"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveMarkLocationAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_check_24"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

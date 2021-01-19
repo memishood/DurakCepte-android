@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.PermissionsFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/phone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/location_permission_title"
+            android:fontFamily="@font/segoe_ui"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:theme="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            android:id="@+id/appCompatButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/location_permission_button"
+            android:fontFamily="@font/magic"
+            android:layout_gravity="center"
+            android:textAllCaps="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:theme="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            android:textColor="@android:color/black"
+            android:id="@+id/appCompatButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/location_feature_button"
+            android:fontFamily="@font/magic"
+            android:layout_gravity="center"
+            android:textAllCaps="false" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
